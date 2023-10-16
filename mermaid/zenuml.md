@@ -1,8 +1,8 @@
 ```mermaid
 zenuml
-    title Annotators
-    @Actor Alice
-    @Database Bob
+    title Declare participant (optional)
+    Bob
+    Alice
     Alice->Bob: Hi Bob
     Bob->Alice: Hi Alice
 ```
