@@ -1,4 +1,4 @@
-# URL:
+# URL
 ```
 https://github.com/github-linguist/linguist/blob/master/vendor/README.md
 ```
