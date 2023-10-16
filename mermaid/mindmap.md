@@ -23,7 +23,6 @@ mindmap
   root((mindmap))
     Origins
       Long history
-      ::icon(fa fa-book)
       Popularisation
         British popular psychology author Tony Buzan
     Research
