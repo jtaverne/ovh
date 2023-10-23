@@ -36,9 +36,11 @@ Note right of J: Bob thinks a long<br/>long time, so long<br/>that the text does
 
 ```mermaid
 %%{init: {'theme': 'neutral' } }%%
-sequenceDiagram TLS 1.2
+sequenceDiagram
+box transparent Aqua
     actor Client1
     participant Server1
+end
 Client1 ->> Server1 : hello
 Server1 ->> Client1 : hello
 Client1 ->> Server1 : Key exchange. Change cipher spec. Finished
