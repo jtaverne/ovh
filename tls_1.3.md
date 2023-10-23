@@ -33,7 +33,7 @@ Server -->> Client : HTTP Response
 %%{init: {'theme': 'base' } }%%
 sequenceDiagram
 autonumber
-box LightBlue <br/>TLS 1.3
+box rgb(191, 223, 255) <br/>TLS 1.3
     actor Client
     participant Server
 end
