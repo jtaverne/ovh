@@ -22,9 +22,13 @@ Note right of Server: 50ms
 Server -->> Client : Hello
 Note right of Server: 100ms
 Client ->> Server : Key exchange. Change cipher spec. Finished
+Note right of Server: 150ms
 Server -->> Client : Change cipher spec. Finished
+Note right of Server: 200ms
 Client ->> Server : HTTP Request
+Note right of Server: 250ms
 Server -->> Client : HTTP Response
+Note right of Server: 300ms
 
 
 ```
