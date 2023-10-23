@@ -30,7 +30,7 @@ sequenceDiagram
     A->>J: Hello John, how are you?
     J->>A: Great!
 Note right of J: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-    A->>B: Hello Bob, how is Charly?
+   
     B->>C: Hello Charly, how are you?
 ```
 
