@@ -36,11 +36,11 @@ Note right of J: Bob thinks a long<br/>long time, so long<br/>that the text does
 
 ```mermaid
 sequenceDiagram
-    box Grey TLS 1.2
+    box Grey <br/>TLS 1.2
     actor Client1
     participant Server1
     end
-    box TLS 1.3
+    box <br/>TLS 1.3
     actor Client2
     participant server2
     end
