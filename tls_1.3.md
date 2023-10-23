@@ -41,7 +41,7 @@ sequenceDiagram
     participant Server
     end
     box TLS 1.3
-    actor cli2
+    actor cli2[Client2]
     participant server2
     end
 cli2 ->> server2 : hehe
