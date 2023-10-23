@@ -41,7 +41,7 @@ sequenceDiagram
     actor Client1
     participant Server1
     end
-    box LightSkyBlue <br/>TLS 1.3
+    box LightBlue <br/>TLS 1.3
     actor Client2
     participant server2
     end
