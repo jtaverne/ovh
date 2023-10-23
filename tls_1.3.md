@@ -30,6 +30,7 @@ sequenceDiagram
     J->>A: Great!
     A->>B: Hello Bob, how is Charly?
     B->>C: Hello Charly, how are you?
+Note right of J: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
 ```
 
 **Une poignée de main TLS plus rapide**
