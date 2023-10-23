@@ -37,29 +37,30 @@ Note right of J: Bob thinks a long<br/>long time, so long<br/>that the text does
 ```mermaid
 %%{init: {'theme': 'neutral' } }%%
 sequenceDiagram
-box transparent Aqua
-    actor Client1
-    participant Server1
+box transparent <br/>TLS 1.2
+    actor Client
+    participant Server
 end
-Client1 ->> Server1 : hello
-Server1 ->> Client1 : hello
-Client1 ->> Server1 : Key exchange. Change cipher spec. Finished
-Server1 ->> Client1 : Change cipher spec. Finished
-Client1 ->> Server1 : HTTP Request
-Server1 ->> Client1 : HTTP Response
+Client ->> Server : Hello
+Server ->> Client : Hello
+Client ->> Server : Key exchange. Change cipher spec. Finished
+Server ->> Client : Change cipher spec. Finished
+Client ->> Server : HTTP Request
+Server ->> Client : HTTP Response
 
 
 ```
 
 ```mermaid
 %%{init: {'theme': 'neutral' } }%%
-sequenceDiagram TLS 1.3
-    actor Client2
-    participant Server2
-Client2 ->> Server2 : hello. Key share
-Server2 ->> Client2 : Key share. Certificate Verify. Finished
-Client2 ->> Server2 : HTTP Request
-Server2 ->> Client2 : HTTP Response
+sequenceDiagram
+box LightBlue <br/>TLS 1.3
+    actor Client
+    participant Server
+Client ->> Server : Hello. Key share
+Server ->> Client : Key share. Certificate Verify. Finished
+Client ->> Server : HTTP Request
+Server ->> Client : HTTP Response
 
 ```
 
