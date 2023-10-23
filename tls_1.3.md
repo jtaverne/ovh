@@ -44,7 +44,7 @@ sequenceDiagram
     actor cli2
     participant server2
     end
-   clie2 > server2
+cli2 ->> server2 : hehe
 ```
 
 **Une poignée de main TLS plus rapide**
