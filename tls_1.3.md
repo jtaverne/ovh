@@ -18,6 +18,7 @@ sequenceDiagram
 
 ```mermaid
 sequenceDiagram
+    autonumber
     box Purple Alice & John
     participant A
     participant J
