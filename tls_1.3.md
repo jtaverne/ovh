@@ -45,7 +45,19 @@ sequenceDiagram
     actor Client2
     participant server2
     end
-Client1 ->> Server1 : hehe
+
+Client1 ->> Server1 : hello
+Server1 ->> Client1 : hello
+Client1 ->> Server1 : Key exchange. Change cipher spec. Finished
+Server1 ->> Client1 : Change cipher spec. Finished
+Client1 ->> Server1 : HTTP Request
+Server1 ->> Client1 : HTTP Response
+
+Client2 ->> Server2 : hello. Key share
+Server2 ->> Client2 : Key share. Certificate Verify. Finished
+Client2 ->> Server2 : HTTP Request
+Server2 ->> Client2 : HTTP Response
+
 ```
 
 **Une poignée de main TLS plus rapide**
