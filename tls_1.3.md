@@ -16,6 +16,22 @@ sequenceDiagram
     Bob->>Alice: Hi Alice
 ```
 
+```mermaid
+sequenceDiagram
+    box Purple Alice & John
+    participant A
+    participant J
+    end
+    box Another Group
+    participant B
+    participant C
+    end
+    A->>J: Hello John, how are you?
+    J->>A: Great!
+    A->>B: Hello Bob, how is Charly?
+    B->>C: Hello Charly, how are you?
+```
+
 **Une poignée de main TLS plus rapide**
 
 Le cryptage TLS et le décryptage SSL nécessitent du temps CPU et ajoutent une latence aux communications réseau, dégradant quelque peu les performances. Sous TLS 1.2, la poignée de main initiale était effectuée en texte clair, ce qui signifie qu'elle devait être cryptée et décryptée. Étant donné qu'une poignée de main typique impliquait l'échange de 5 à 7 paquets entre le client et le serveur, cela ajoutait une surcharge considérable à la connexion. Sous la version 1.3, le cryptage du certificat serveur a été adopté par défaut, permettant d'effectuer une poignée de main TLS avec 0 à 3 paquets, réduisant ou éliminant cette surcharge et permettant des connexions plus rapides et plus réactives.
