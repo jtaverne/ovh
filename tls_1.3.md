@@ -9,32 +9,6 @@ Depuis sa définition initiale en janvier 1999, TLS a subi une série de mises �
 TLS 1.3 offre plusieurs améliorations par rapport aux versions précédentes, notamment une poignée de main TLS plus rapide et des suites de chiffrement plus simples et plus sécurisées. Les échanges de clés Zero Round-Trip Time (0-RTT) simplifient davantage la poignée de main TLS. Ensemble, ces changements offrent de meilleures performances et une sécurité renforcée.
 
 ```mermaid
-sequenceDiagram
-    actor Alice
-    actor Bob
-    Alice->>Bob: Hi Bob
-    Bob->>Alice: Hi Alice
-```
-
-```mermaid
-sequenceDiagram
-    autonumber
-    box Purple Alice & John
-    participant A
-    participant J
-    end
-    box Another Group
-    participant B
-    participant C
-    end
-    A->>J: Hello John, how are you?
-    J->>A: Great!
-Note right of J: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-   
-    B->>C: Hello Charly, how are you?
-```
-
-```mermaid
 %%{init: {'theme': 'neutral' } }%%
 sequenceDiagram
 autonumber
@@ -42,8 +16,11 @@ box transparent <br/>TLS 1.2
     actor Client
     participant Server
 end
+Note right of Server: 0ms
 Client ->> Server : Hello
+Note right of Server: 50ms
 Server -->> Client : Hello
+Note right of Server: 100ms
 Client ->> Server : Key exchange. Change cipher spec. Finished
 Server -->> Client : Change cipher spec. Finished
 Client ->> Server : HTTP Request
