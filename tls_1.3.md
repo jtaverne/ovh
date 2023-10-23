@@ -1,4 +1,4 @@
-### Différences Clés Entre TLS 1.2 et TLS 1.3
+## Différences Clés Entre TLS 1.2 et TLS 1.3
 
 La sécurité de la couche de transport (TLS) est une technologie fondamentale pour la confidentialité en ligne. En tant que protocole cryptographique, TLS crypte les données et authentifie les connexions lors du transfert des données sur Internet via HTTP, une extension du protocole connue sous le nom de HTTPS. Lorsqu'un utilisateur visite un site Web, son navigateur vérifie la présence d'un certificat TLS sur le site. Si un certificat est présent, le navigateur effectue une poignée de main TLS pour vérifier sa validité et authentifier le serveur. Une fois qu'un lien a été établi entre les deux serveurs, le cryptage TLS et le décryptage SSL permettent un transport sécurisé des données.
 
