@@ -37,7 +37,7 @@ Note right of J: Bob thinks a long<br/>long time, so long<br/>that the text does
 ```mermaid
 sequenceDiagram
     box Grey TLS 1.2
-    actor cli1[Client]
+    actor cli1{Client}
     participant Server
     end
     box TLS 1.3
