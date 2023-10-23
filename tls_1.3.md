@@ -35,8 +35,8 @@ Note right of J: Bob thinks a long<br/>long time, so long<br/>that the text does
 ```
 
 ```mermaid
+%%{init: {'theme': 'neutral' } }%%
 sequenceDiagram
-    theme: neutral
     box Grey <br/>TLS 1.2
     actor Client1
     participant Server1
