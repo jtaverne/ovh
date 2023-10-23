@@ -41,10 +41,15 @@ box rgb( 133, 193, 233 ) <br/>TLS 1.3
     actor Client
     participant Server
 end
+Note right of Server: 0ms
 Client ->> Server : Hello. Key share
+Note right of Server: 50ms
 Server -->> Client : Key share. Certificate Verify. Finished
+Note right of Server: 100ms
 Client ->> Server : HTTP Request
+Note right of Server: 150ms
 Server -->> Client : HTTP Response
+Note right of Server: 200ms
 
 ```
 
