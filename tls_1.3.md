@@ -37,6 +37,7 @@ Note right of J: Bob thinks a long<br/>long time, so long<br/>that the text does
 ```mermaid
 %%{init: {'theme': 'neutral' } }%%
 sequenceDiagram
+autonumber
 box transparent <br/>TLS 1.2
     actor Client
     participant Server
@@ -54,9 +55,11 @@ Server ->> Client : HTTP Response
 ```mermaid
 %%{init: {'theme': 'neutral' } }%%
 sequenceDiagram
+autonumber
 box LightBlue <br/>TLS 1.3
     actor Client
     participant Server
+end
 Client ->> Server : Hello. Key share
 Server ->> Client : Key share. Certificate Verify. Finished
 Client ->> Server : HTTP Request
