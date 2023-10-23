@@ -43,17 +43,17 @@ box transparent <br/>TLS 1.2
     participant Server
 end
 Client ->> Server : Hello
-Server ->> Client : Hello
+Server -->> Client : Hello
 Client ->> Server : Key exchange. Change cipher spec. Finished
-Server ->> Client : Change cipher spec. Finished
+Server -->> Client : Change cipher spec. Finished
 Client ->> Server : HTTP Request
-Server ->> Client : HTTP Response
+Server -->> Client : HTTP Response
 
 
 ```
 
 ```mermaid
-%%{init: {'theme': 'neutral' } }%%
+%%{init: {'theme': 'base' } }%%
 sequenceDiagram
 autonumber
 box LightBlue <br/>TLS 1.3
@@ -61,9 +61,9 @@ box LightBlue <br/>TLS 1.3
     participant Server
 end
 Client ->> Server : Hello. Key share
-Server ->> Client : Key share. Certificate Verify. Finished
+Server -->> Client : Key share. Certificate Verify. Finished
 Client ->> Server : HTTP Request
-Server ->> Client : HTTP Response
+Server -->> Client : HTTP Response
 
 ```
 
